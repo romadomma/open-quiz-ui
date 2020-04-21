@@ -1,19 +1,27 @@
 <template>
     <v-container
             class="fill-height"
-            fluid
     >
-        <v-row>
+        <v-row
+        >
+            <v-col
+                    cols="12"
+                    align="center"
+                    justify="center"
+            >
+                <v-card class="mb-4">
+                    <v-card-title>А теперь вам необходимо выбрать категорию вопросов!</v-card-title>
+                </v-card>
+            </v-col>
             <v-col
                     v-for="n in 4"
                     :key="n"
                     cols="6"
                     align="center"
-                    justify="center"
                     @click="checkAnswer"
             >
-                <div class="text-button-item pb-12 pt-12 elevation-4">
-                    Вопросы на телевизоре, или другом устройстве
+                <div class="text-button-item pb-6 pt-6 elevation-4 headline">
+                    Фильмы 60
                 </div>
             </v-col>
         </v-row>
@@ -30,7 +38,7 @@
 			}),
 			// Todo
 			checkAnswer() {
-				router.push({name: 'player_question_result'})
+				router.push({name: 'player_question'})
 			}
 		},
 		data: () => ({}),

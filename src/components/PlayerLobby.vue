@@ -54,10 +54,10 @@
 				this.to_start_date = setInterval(() => {
 					this.timer -= 1;
 					if (this.timer <= 0) {
-						router.push({name: 'player_question'});
+						router.push({name: 'player_category'});
 						clearInterval(this.to_start_date);
 					}
-				}, 1000);
+				}, 500);
 			},
 			notReadyToStart() {
 				this.isVisible = false;
@@ -72,15 +72,4 @@
 		}),
 	}
 </script>
-<style>
-    .text-button-item {
-        background: #D4F6FF;
-        border-radius: 2px;
-        cursor: pointer;
-    }
 
-    .text-button-item:hover {
-        background: #92F0FA;
-        border-radius: 2px;
-    }
-</style>

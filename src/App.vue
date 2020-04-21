@@ -42,4 +42,16 @@
         75%  {background: #f1cfcf;}
         100% {background: #faf6d6;}
     }
+
+    .text-button-item {
+        background: #d7ffcc;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .text-button-item:hover {
+        background: #92F0FA;
+        border-radius: 2px;
+    }
+
 </style>

@@ -33,7 +33,7 @@
                                 sm="6"
                                 class="text-center md6 pa-4"
                         >
-                            <v-btn @click="addCount()" block x-large color="primary">Я СЕРВЕР</v-btn>
+                            <v-btn @click="toServer()" block x-large color="primary">Я СЕРВЕР</v-btn>
                         </v-col>
                     </v-row>
                 </v-card-text>
@@ -54,6 +54,9 @@
 		methods: {
 			toPlayer() {
 				router.push({name: 'player_step_one'})
+			},
+			toServer() {
+				router.push({name: 'server_lobby'})
 			},
 			...mapActions({
 				addCount: 'example/addCount'
