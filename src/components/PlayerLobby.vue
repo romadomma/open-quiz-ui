@@ -50,8 +50,10 @@
 				updateCode: 'player/updateCode'
 			}),
 			readyToStart() {
+
 				this.isVisible = true;
 				this.to_start_date = setInterval(() => {
+					this.$socket.emit('hello', {});
 					this.timer -= 1;
 					if (this.timer <= 0) {
 						router.push({name: 'player_category'});
